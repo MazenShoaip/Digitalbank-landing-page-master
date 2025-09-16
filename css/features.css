@@ -1,0 +1,66 @@
+.features {
+	background-color: hsl(220, 16%, 96%);
+}
+.features .container {
+	flex-direction: column;
+	gap: 75px;
+}
+.features .text {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	width: 100%;
+}
+.features .text h2 {
+	color: hsl(233, 26%, 24%);
+	font-size: 36px;
+	font-weight: 400;
+}
+.features .text p {
+	font-size: 18px;
+	color: hsl(233, 8%, 62%);
+}
+.features .text .p {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.features .feature {
+}
+.features .feature .card {
+	display: flex;
+	flex-direction: column;
+	gap: 36px;
+	flex-shrink: 1;
+}
+@media (max-width: 768px) {
+	.features .feature .card {
+		text-align: center;
+		align-items: center;
+	}
+
+}
+.features .feature .card h3 {
+	color: hsl(233, 26%, 24%);
+	font-size: 20px;
+	font-weight: 400;
+}
+.features .feature .card p {
+	color: hsl(233, 8%, 62%);
+}
+.features .feature .card .icon {
+	width: 72px;
+	height: 72px;
+}
+.features .feature .card .icon.online {
+	background: url("../images/icon-online.svg");
+}
+.features .feature .card .icon.simple {
+	background: url("../images/icon-budgeting.svg");
+}
+.features .feature .card .icon.fast {
+	background: url("../images/icon-onboarding.svg");
+}
+.features .feature .card .icon.api {
+	background: url("../images/icon-api.svg");
+}

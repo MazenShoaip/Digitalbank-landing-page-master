@@ -1,0 +1,49 @@
+.article {
+	background-color: hsl(0, 0%, 98%);
+}
+.article .container {
+	flex-direction: column;
+	gap: 65px;
+}
+.article h2 {
+	color: hsl(233, 26%, 24%);
+	font-size: 36px;
+	font-weight: 400;
+	width: 100%;
+}
+.article .articles.group {
+	gap: 32px;
+}
+.article .articles .art {
+	display: flex;
+	flex-direction: column;
+	max-width: 255px;
+}
+.article .articles .art img {
+	max-width: 255px;
+	height: 200px;
+}
+.article .articles .art .text {
+	padding: 25px 20px;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+.article .articles .art .text .author {
+	color: hsl(233, 8%, 62%);
+	font-size: 12px;
+}
+.article .articles .art .text .title {
+	color: hsl(233, 26%, 24%);
+	font-size: 18px;
+}
+.article .articles .art .text .desc {
+	color: hsl(233, 8%, 62%);
+	font-size: 14px;
+	-webkit-line-clamp: 4;
+	line-clamp: 4;
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-box-orient: vertical;
+}

@@ -1,0 +1,82 @@
+footer {
+	background-color: hsl(233, 26%, 24%);
+	height: 190px;
+	color: hsl(220, 16%, 96%);
+}
+footer .container {
+	gap: min(10%, 130px);
+	height: 100%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	justify-content: flex-start;
+	align-items: center;
+}
+footer .info {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+}
+footer .social {
+	display: flex;
+	gap: 16px;
+}
+
+footer .social .icon {
+	width: 20px;
+	height: 20px;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+footer .col {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+}
+footer .col p {
+	font-size: 14px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+footer .col p:hover {
+	color: #57aaa0;
+}
+footer .copyright {
+	margin-left: auto;
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+}
+footer .copyright .button {
+	margin-left: auto;
+}
+footer .copyright p {
+	font-size: 14px;
+	color: hsl(233, 8%, 62%);
+}
+@media (max-width: 768px) {
+	footer {
+		height: auto;
+	}
+	footer .container {
+		flex-direction: column;
+		gap: 25px;
+	}
+	footer .info {
+		gap: 30px;
+	}
+	footer .col {
+		text-align: center;
+	}
+	footer .copyright {
+		margin: 0;
+		align-items: center;
+	}
+	footer .copyright .button {
+		margin: 0;
+	}
+    body
+    {
+        text-align: center;
+    }
+}
