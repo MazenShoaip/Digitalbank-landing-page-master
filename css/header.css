@@ -20,19 +20,20 @@ header ul {
 }
 
 header ul li {
-	color: hsl(233, 8%, 62%);
-	transition: 0.3s;
-	cursor: pointer;
 	border-bottom: solid 4px transparent;
 	height: 80px;
-	/* line-height: 80px; */
 	display: flex;
 	align-items: center;
 	justify-content: center;
 
 	position: relative;
 }
-header .container > ul li::before {
+header ul li a {
+	color: hsl(233, 8%, 62%);
+	transition: 0.3s;
+}
+
+header .container > nav ul li::before {
 	content: "";
 	position: absolute;
 	width: 100%;
@@ -45,10 +46,10 @@ header .container > ul li::before {
 	pointer-events: none;
 	-webkit-tap-highlight-color: transparent;
 }
-header .container > ul li:hover {
+header .container > nav ul li a:hover {
 	color: black;
 }
-header .container ul li:hover::before {
+header .container ul li:has(a:hover)::before {
 	opacity: 1;
 }
 header .menu {
@@ -58,7 +59,7 @@ header .menu {
 	header .button {
 		display: none;
 	}
-	header .container > ul {
+	header .container > nav ul {
 		display: none;
 	}
 	header .menu ul {
@@ -82,8 +83,6 @@ header .menu {
 		line-height: 40px;
 		color: #21212d;
 		font-size: 20px;
-	}
-	header ul li::before {
 	}
 	header .menu {
 		display: block;

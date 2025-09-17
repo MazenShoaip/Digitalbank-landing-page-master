@@ -1,10 +1,10 @@
 footer {
 	background-color: hsl(233, 26%, 24%);
-	height: 190px;
+	height: 195px;
 	color: hsl(220, 16%, 96%);
 }
 footer .container {
-	gap: min(10%, 130px);
+	gap: min(8%, 130px);
 	height: 100%;
 	padding-top: 50px;
 	padding-bottom: 50px;
@@ -32,13 +32,14 @@ footer .col {
 	display: flex;
 	flex-direction: column;
 	gap: 25px;
+	flex-shrink: 0;
 }
-footer .col p {
+footer .col a {
 	font-size: 14px;
-	cursor: pointer;
 	transition: 0.3s;
+	color: hsl(220, 16%, 96%);
 }
-footer .col p:hover {
+footer .col a:hover {
 	color: #57aaa0;
 }
 footer .copyright {
@@ -46,13 +47,17 @@ footer .copyright {
 	display: flex;
 	flex-direction: column;
 	gap: 25px;
+	align-items: flex-end;
 }
-footer .copyright .button {
-	margin-left: auto;
-}
+
 footer .copyright p {
 	font-size: 14px;
+		text-align: right;
 	color: hsl(233, 8%, 62%);
+}
+footer nav {
+	display: flex;
+	gap: min(10vw, 130px);
 }
 @media (max-width: 768px) {
 	footer {
@@ -75,8 +80,7 @@ footer .copyright p {
 	footer .copyright .button {
 		margin: 0;
 	}
-    body
-    {
-        text-align: center;
-    }
+	body {
+		text-align: center;
+	}
 }

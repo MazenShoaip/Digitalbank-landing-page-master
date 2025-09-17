@@ -5,17 +5,17 @@
 }
 body,
 html {
+	background-color: hsl(233, 26%, 24%);
 	font-family: "Public Sans", sans-serif;
 }
 .container {
-	padding: 50px min(162px, 10%);
-	max-width: 1440px;
+	padding: 3rem 2rem;
+	max-width: 1200px;
 	margin: auto;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
-
 .button {
 	background: linear-gradient(30deg, hsl(192, 69%, 51%), hsl(136, 64%, 51%));
 	width: 160px;
@@ -29,6 +29,8 @@ html {
 	cursor: pointer;
 	position: relative;
 	overflow: hidden;
+	border: none;
+	font-size: 14px;
 }
 .button::before {
 	width: 100%;
@@ -49,17 +51,34 @@ html {
 	display: grid;
 	grid-template-columns: repeat(4, minmax(100px, 255px));
 	gap: 60px;
-	justify-content: center;
+	justify-content: space-between;
 	width: 100%;
 }
-
+a {
+	text-decoration: none;
+}
+@media (max-width: 1024px) and (min-width: 769px) {
+	.article .group {
+		grid-template-columns: repeat(3, auto);
+	}
+}
 @media (max-width: 1024px) {
 	.group {
-		grid-template-columns: repeat(2, minmax(100px, 255px));
+		grid-template-columns: repeat(2, auto);
+		justify-content: space-evenly;
 	}
 }
 @media (max-width: 768px) {
+	.container {
+		padding: 2rem 1.5rem;
+	}
+}
+@media (max-width: 550px) {
 	.group {
 		grid-template-columns: repeat(1, auto);
+		justify-content: center;
+	}
+	.container {
+		padding: 1.5rem 1rem;
 	}
 }
